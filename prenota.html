@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Medico | Prenota</title>
+    <meta name="description" content="Prenota una visita medica specialistica online">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Centro Medico</a></div>
+        <div class="pagine">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="visite.html">Visite</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="prenota.html">Prenota</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="accesso">
+            <a href="#" class="accedi">Accedi</a>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="form-prenotazione">
+            <div class="form-container">
+                <h1>Prenota una visita</h1>
+                <p>Compila il modulo per richiedere la prenotazione. I campi con * sono obbligatori.</p>
+
+
+                <form action="#" method="post">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Mario Rossi">
+
+
+                    <label for="eta">Età *</label>
+                    <input type="number" id="eta" name="eta" min="1" max="120" required placeholder="es. 45">
+
+
+                    <label for="tipoVisita">Tipo di visita *</label>
+                    <select id="tipoVisita" name="tipoVisita" required>
+                        <option value="" disabled selected>– Seleziona –</option>
+                        <option value="cardiologica">Cardiologica</option>
+                        <option value="pediatrica">Pediatrica</option>
+                        <option value="oculistica">Oculistica</option>
+                        <option value="oncologica">Oncologica</option>
+                    </select>
+
+
+                    <label for="data">Data desiderata *</label>
+                    <input type="date" id="data" name="data" required>
+
+
+                    <label>Ricetta medica? *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="ricetta" value="si" required> Sì</label>
+                        <label><input type="radio" name="ricetta" value="no"> No</label>
+                    </div>
+
+
+                    <label for="priorita">Codice di priorità (se prescritto)</label>
+                    <select id="priorita" name="priorita">
+                        <option value="" disabled selected>– Seleziona –</option>
+                        <option value="U">U – Urgente (72 ore)</option>
+                        <option value="B">B – Breve (10 giorni)</option>
+                        <option value="D">D – Differibile (30 giorni)</option>
+                        <option value="P">P – Programmabile (120 giorni)</option>
+                    </select>
+                    <p class="nota">Nota: la priorità viene assegnata dal medico sulla ricetta.</p>
+
+
+                    <button type="submit">Invia prenotazione</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>Centro Medico – Via Salute 10, Milano</p>
+            <p>Tel: 02 12345678 – Email: info@centromedico.it</p>
+            <p>&copy; 2026 Centro Medico. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
